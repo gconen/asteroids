@@ -34,8 +34,8 @@
       canvasEl.width = window.innerWidth;
       var shootSound = document.getElementById("shoot-sound");
       var astDestroySound = document.getElementById("asteroid-destroy-sound");
-      var game = new Asteroids.Game(astDestroySound);
-      new Asteroids.GameView(game, canvasEl.getContext("2d"), shootSound).start();
+      var game = new Asteroids.Game(astDestroySound, shootSound);
+      new Asteroids.GameView(game, canvasEl.getContext("2d")).start();
     </script>
   </body>
 </html>
