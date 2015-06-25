@@ -11,6 +11,7 @@
     <div class="canvas-container">
       <canvas id="game-canvas"></canvas>
       <div id="instructions">
+        <h1>Press <span class="keyboard">tab</span> to play.
         <h1>Controls</h1>
         <p>
           <span class="keyboard">tab</span> start or pause the game
@@ -56,8 +57,19 @@
         <p> If your ship is moving, its movement will be added to your bullet's
           movement when you fire.
         </p>
-
       </div>
+      <div id="game-lost" class="hidden">
+        <h1>Game Over</h1>
+        <p>Sorry, you ran out of ships.</p>
+      </div>
+      <div id="game-won" class="hidden">
+        <h1>Congratulations!</h1>
+        <p>You destroyed all the asteroids, you win!</p>
+      </div>
+    </div>
+    <div class="status-bar">
+      <span id="ships-left">3</span> Spare Ships
+      <span id="asteroids-left"></span> Asteroids Remaining
     </div>
 
 
