@@ -1,3 +1,30 @@
-canvas {
+body {
   background-color: black;
+  color: lightgrey;
+}
+
+.canvas-container {
+  width: 900px;
+  height: 700px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.keyboard {
+  border: 1px solid gray;
+  font-size: 1.2em;
+  box-shadow: 1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;
+  border-radius: 3px;
+  margin: 2px 3px;
+  padding: 1px 5px;
+}
+
+#instructions {
+  position: absolute;
+  top: 0;
+  left 0;
+  width: 100%;
 }

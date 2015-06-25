@@ -7,7 +7,61 @@
   </head>
 
   <body>
-    <canvas id="game-canvas"></canvas>
+
+    <div class="canvas-container">
+      <canvas id="game-canvas"></canvas>
+      <div id="instructions">
+        <h1>Controls</h1>
+        <p>
+          <span class="keyboard">tab</span> start or pause the game
+        </p>
+        <h2>Movement</h2>
+        <p>
+          <span class="keyboard">&#8593;</span> or <span class="keyboard">w</span>
+          accelerate up
+        </p>
+        <p>
+          <span class="keyboard">&#8592;</span> or <span class="keyboard">a</span>
+          accelerate left
+        </p>
+        <p>
+          <span class="keyboard">&#8595;</span> or <span class="keyboard">s</span>
+          accelerate down
+        </p>
+        <p>
+          <span class="keyboard">&#8594;</span> or <span class="keyboard">d</span>
+          accelerate right
+        </p>
+        <p> If you want to slow down, just accelerate in the opposite direction.
+          You keep getting faster the longer you accelerate, but it will take
+          just as long to stop.
+        </p>
+        <h2>Shooting</h2>
+        <p>
+          numpad <span class="keyboard">8</span> or <span class="keyboard">i</span>
+          shoot up
+        </p>
+        <p>
+          numpad <span class="keyboard">4</span> or <span class="keyboard">j</span>
+          shoot left
+        </p>
+        <p>
+          numpad <span class="keyboard">2</span> or <span class="keyboard">k</span>
+          shoot down
+        </p>
+        <p>
+          numpad <span class="keyboard">6</span> or <span class="keyboard">l</span>
+          shoot right
+        </p>
+        <p> If your ship is moving, its movement will be added to your bullet's
+          movement when you fire.
+        </p>
+
+      </div>
+    </div>
+
+
+
     <audio id="shoot-sound" src="./Laser.mp3"></audio>
     <audio id="asteroid-destroy-sound" src="./Explosion.mp3"></audio>
 
