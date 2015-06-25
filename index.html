@@ -3,14 +3,7 @@
 <html>
   <head>
     <title>Asteroids</title>
-
-    <style>
-      html, body, canvas {
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
 
   <body>
@@ -30,8 +23,8 @@
 
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      canvasEl.height = window.innerHeight;
-      canvasEl.width = window.innerWidth;
+      canvasEl.height = Asteroids.DIM_Y;
+      canvasEl.width = Asteroids.DIM_X;
       var shootSound = document.getElementById("shoot-sound");
       var astDestroySound = document.getElementById("asteroid-destroy-sound");
       var game = new Asteroids.Game(astDestroySound, shootSound);
