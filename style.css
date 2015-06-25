@@ -9,7 +9,7 @@ body {
   margin: auto;
 }
 
-.hidden {
+#instructions.hidden {
   display: none;
 }
 

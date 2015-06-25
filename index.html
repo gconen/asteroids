@@ -82,7 +82,9 @@
       var shootSound = document.getElementById("shoot-sound");
       var astDestroySound = document.getElementById("asteroid-destroy-sound");
       var game = new Asteroids.Game(astDestroySound, shootSound);
-      new Asteroids.GameView(game, canvasEl.getContext("2d")).start();
+      var overlay = document.getElementById("instructions")
+      var view = new Asteroids.GameView(game, canvasEl.getContext("2d"), overlay)
+      view.startListening();
     </script>
   </body>
 </html>
