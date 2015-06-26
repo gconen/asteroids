@@ -12,8 +12,8 @@ choose not to use, in order to explore what other options were
 available.
 
 I think I learned a number of things doing this. For example,
-I add an event listener that I only want to trigger once. I
-could use .one, in jQuery, to do this easily. Instead I 
+I have an event listener that I only want to trigger once. I
+could use jQuery's .one to do this easily. Instead I 
 learned about and used a new pattern that looks like this:
 
 ```
