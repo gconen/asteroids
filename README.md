@@ -17,12 +17,7 @@ could use jQuery's .one to do this easily. Instead I
 learned about and used a new pattern that looks like this:
 
 ```
-var that = this;
-  resetButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    event.target.removeEventListener(event.type, arguments.callee);
-    that.newGame(endingEl);
-  });
+event.target.removeEventListener(event.type, arguments.callee);
 ```
 
 So now I learned how to make a self-cancelling listener, and a
