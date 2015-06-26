@@ -25,6 +25,6 @@ var that = this;
   });
 ```
 
-So now I know how to make a self-cancelling listener, and a
+So now I learned how to make a self-cancelling listener, and a
 few other incidental things along the way (arguments.callee
-for example).
+for example), that make me, I think, a better programmer.
