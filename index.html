@@ -11,9 +11,13 @@
     <div class="canvas-container">
       <canvas id="game-canvas"></canvas>
       <div id="instructions">
-        <h1>Press <span class="keyboard">tab</span> to play.
+        <h1>
+          Press <span class="keyboard">enter</span>
+          or <span class="keyboard">tab</span> to play.
+        </h1>
         <h1>Controls</h1>
         <p>
+          <span class="keyboard">enter</span> or
           <span class="keyboard">tab</span> start or pause the game
         </p>
         <h2>Movement</h2>
@@ -59,17 +63,23 @@
         </p>
       </div>
       <div id="game-lost" class="hidden">
-        <h1>Game Over</h1>
-        <p>Sorry, you ran out of ships.</p>
+        <div class="ending-heading">
+          <h1>Game Over</h1>
+          <p>Sorry, you ran out of ships.</p>
+        </div>
+        <div class="reset-button">I'd like to start a new game</div>
       </div>
       <div id="game-won" class="hidden">
-        <h1>Congratulations!</h1>
-        <p>You destroyed all the asteroids, you win!</p>
+        <div class="ending-heading">
+          <h1>Congratulations!</h1>
+          <p>You destroyed all the asteroids, you win!</p>
+        </div>
+        <div class="reset-button">I'd like to start a new game</div>
       </div>
     </div>
     <div class="status-bar">
-      <div><span id="ships-left">3</span> Spare Ships</div>
-      <div><span id="asteroids-left">10</span> Asteroids Remaining</div>
+      <div>Spare Ships: <span id="ships-left">3</span></div>
+      <div>Asteroids Remaining: <span id="asteroids-left">10</span></div>
     </div>
 
 
